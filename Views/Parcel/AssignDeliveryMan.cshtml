@@ -1,0 +1,10 @@
+﻿@model IEnumerable<P02_WebApr2023_Assg1_Team6.Models.Parcel>
+
+@{
+    ViewData["Title"] = "AssignDeliveryMan";
+}
+
+<h4 class="PageTitle">View Parcel</h4>
+<!-- Add a partial view to display a list of parcel records
+ in a tabular format. -->
+<partial name="~/Views/Parcel/_AssignParcel.cshtml" model="@Model" />

@@ -1,0 +1,43 @@
+﻿@model IEnumerable<P02_WebApr2023_Assg1_Team6.Models.Parcel>
+
+@if (Model.ToList().Count > 0)
+{
+	<div class="table-responsive">
+		<table id="assignParcel" class="table table-striped table-bordered">
+			<thead class="table-dark">
+				<tr>
+					<th>Parcel ID</th>
+					<th>Receiver's Name</th>
+					<th>Receiver's telephone no.</th>
+					<th>Delivery Address</th>
+					<th>Target delivery date</th>
+					<th>Delivery status</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var item in Model)
+				{
+					<tr>
+						<td>@item.ParcelId.ToString()</td>
+						<td>@item.ReceiverName</td>
+						<td>@item.ReceiverTelNo</td>
+						<td>@item.DeliveryAddress</td>
+						<td>@item.TargetDeliveryDate</td>
+						<td>@item.DeliveryStatus</td>
+						<td>
+							<a asp-action="AssignParcel" asp-controller="Parcel"
+					   asp-route-id="@item.ParcelId">Assign</a>
+						</td>
+					</tr>
+
+
+				}
+			</tbody>
+		</table>
+	</div>
+}
+else
+{
+	<span style="color:red">No more available parcel for now!</span>
+}

@@ -1,0 +1,225 @@
+﻿@model P02_WebApr2023_Assg1_Team6.Models.Parcel
+
+@{
+ViewData["Title"] = "Create";
+}
+
+<h4 class="PageTitle">Add a new parcel record</h4>
+<hr />
+<form asp-controller="Parcel" asp-action="Create">
+ <fieldset class="FormContent">
+
+        @*ItemDescription*@
+        <div class="row mb-3">
+            <label asp-for="ItemDescription"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="ItemDescription" class="form-control" />
+                <span asp-validation-for="ItemDescription"
+                      class="text-danger"></span>
+            </div>
+        </div>
+        
+        @*SenderName*@
+                <div class="row mb-3">
+            <label asp-for="SenderName"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="SenderName" class="form-control" />
+                <span asp-validation-for="SenderName"
+                      class="text-danger"></span>
+            </div>
+        </div>
+
+        @*SenderTelNo*@
+        <div class="row mb-3">
+            <label asp-for="SenderTelNo"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="SenderTelNo" class="form-control" />
+                <span asp-validation-for="SenderTelNo"
+                      class="text-danger"></span>
+            </div>
+        </div>
+
+        @*ReceiverName*@
+                <div class="row mb-3">
+            <label asp-for="ReceiverName"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="ReceiverName" class="form-control" />
+                <span asp-validation-for="ReceiverName"
+                      class="text-danger"></span>
+            </div>
+        </div>
+
+        @*ReceiverTelNo*@
+        <div class="row mb-3">
+            <label asp-for="ReceiverTelNo"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="ReceiverTelNo" class="form-control" />
+                <span asp-validation-for="ReceiverTelNo"
+                      class="text-danger"></span>
+            </div>
+        </div>
+
+        @*DeliveryAddress*@
+        <div class="row mb-3">
+            <label asp-for="DeliveryAddress"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="DeliveryAddress" class="form-control" />
+                <span asp-validation-for="DeliveryAddress"
+                      class="text-danger"></span>
+            </div>
+        </div>
+
+        @*FromCity*@
+                <div class="row mb-3">
+            <label asp-for="FromCity"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="FromCity" class="form-control" />
+                <span asp-validation-for="FromCity"
+                      class="text-danger"></span>
+            </div>
+        </div>
+@*                <div class="row mb-3">
+            <input type="hidden" asp-for="FromCity" />
+            <label asp-for="FromCity"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <!-- Drop-down list displaying cities -->
+                <select asp-for="FromCity"
+                        asp-items="@(@ViewData["CityList"] as List<SelectListItem>)"
+                        class="form-select"></select>
+            </div>
+            <br></br>*@
+
+        @*FromCountry*@
+        <div class="row mb-3">
+            <label asp-for="FromCountry"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="FromCountry" class="form-control" />
+                <span asp-validation-for="FromCountry"
+                      class="text-danger"></span>
+            </div>
+        </div>
+
+        @*ToCity*@
+        <div class="row mb-3">
+            <label asp-for="ToCity"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="ToCity" class="form-control" />
+                <span asp-validation-for="ToCity"
+                      class="text-danger"></span>
+            </div>
+        </div>
+
+@*        <div class="row mb-3">
+            <input type="hidden" asp-for="ToCity" />
+            <label asp-for="ToCity"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <!-- Drop-down list displaying cities -->
+                <select asp-for="ToCity"
+                        asp-items="@(@ViewData["CityList"] as List<SelectListItem>)"
+                        class="form-select"></select>
+                        <br></br>
+            </div>*@
+
+        @*ToCountry*@
+        <div class="row mb-3">
+            <label asp-for="ToCountry"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="ToCountry" class="form-control" />
+                <span asp-validation-for="ToCountry"
+                      class="text-danger"></span>
+            </div>
+        </div>
+
+        @*ParcelWeight*@
+        <div class="row mb-3">
+            <label asp-for="ParcelWeight"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="ParcelWeight" class="form-control" />
+                <span asp-validation-for="ParcelWeight"
+                      class="text-danger"></span>
+            </div>
+        </div>
+
+        @*DeliveryCharge*@
+@*                <div class="row mb-3">
+            <label asp-for="DeliveryCharge"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="DeliveryCharge" class="form-control" />
+                <span asp-validation-for="DeliveryCharge"
+                      class="text-danger"></span>
+            </div>
+        </div>*@
+
+        @*Currency*@
+        <div class="row mb-3">
+            <label asp-for="Currency"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="Currency" class="form-control" />
+                <span asp-validation-for="Currency"
+                      class="text-danger"></span>
+            </div>
+        </div>
+
+        @*TargetDeliveryDate*@
+@*        <div class="row mb-3">
+            <label asp-for="TargetDeliveryDate"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="TargetDeliveryDate" class="form-control" />
+                <span asp-validation-for="TargetDeliveryDate"
+                      class="text-danger"></span>
+            </div>
+            </div>*@
+
+       <div class="row mb-3">
+            <div class="col-sm-9 offset-sm-3">
+                <input type="submit" value="Create"
+                       class="btn btn-primary" />
+            </div>
+        </div>
+
+@*        <div style="text-align:right;">
+            <a asp-action="CurrencyConversion">Convert</a>
+        </div>*@
+    </fieldset>
+</form>
+
+@*@if (Convert.ToBoolean(ViewData["ShowResult"]))
+{
+
+}
+*@
+
+
+@*<script>
+    //Calculate target delivery date according to city
+
+        //today's date
+        var todaytime = new Date(document.getElementById("TargetDeliveryDate").value);
+        //city
+        var city = new HTMLInputElement(document.getElementById("ToCity").value)
+        //condition for transit time to be computed
+        if (parcel.city == "Singapore"){
+            //var rates = Math.round(1.00: document.getElementById("ShippingRates"));
+            var days =  int(todaytime) + int(tt[0]);
+        }
+        else if (parcel.city == "Hong Kong"){
+            var days = int(todaytime) + int(tt[2])
+        }
+    }
+</script>*@

@@ -1,0 +1,164 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = P02_WebApr2023_Assg1_Team6
+build_property.RootNamespace = P02_WebApr2023_Assg1_Team6
+build_property.ProjectDir = C:\Users\vivian\Desktop\web\29July\P02_WebApr2023_Assg1_Team6\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\vivian\Desktop\web\29July\P02_WebApr2023_Assg1_Team6
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/CreateReport/CreateFailureReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlUmVwb3J0XENyZWF0ZUZhaWx1cmVSZXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/CreateReport/FailedParcelReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlUmVwb3J0XEZhaWxlZFBhcmNlbFJlcG9ydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/CreateReport/ViewDeliveryFailureReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlUmVwb3J0XFZpZXdEZWxpdmVyeUZhaWx1cmVSZXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/CreateReport/_FailedParcelReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlUmVwb3J0XF9GYWlsZWRQYXJjZWxSZXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/CreateReport/_ViewDeliveryFailureReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlUmVwb3J0XF9WaWV3RGVsaXZlcnlGYWlsdXJlUmVwb3J0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/DeliveryHistory/ViewDeliveryHistory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVsaXZlcnlIaXN0b3J5XFZpZXdEZWxpdmVyeUhpc3RvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/DeliveryHistory/_ViewDeliveryHistory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVsaXZlcnlIaXN0b3J5XF9WaWV3RGVsaXZlcnlIaXN0b3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/Home/AdminManagerMain.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbk1hbmFnZXJNYWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/Home/DeliveryManMain.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZWxpdmVyeU1hbk1haW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/Home/FrontOfficeMain.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGcm9udE9mZmljZU1haW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/Home/StationManagerMain.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdGF0aW9uTWFuYWdlck1haW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/Parcel/AssignDeliveryMan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyY2VsXEFzc2lnbkRlbGl2ZXJ5TWFuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/Parcel/AssignParcel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyY2VsXEFzc2lnblBhcmNlbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/Parcel/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyY2VsXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/Parcel/CurrencyConversion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyY2VsXEN1cnJlbmN5Q29udmVyc2lvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/Parcel/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyY2VsXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/Parcel/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyY2VsXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/Parcel/ShippingRCalculator.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyY2VsXFNoaXBwaW5nUkNhbGN1bGF0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/Parcel/_AssignParcel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyY2VsXF9Bc3NpZ25QYXJjZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/Parcel/_ViewParcel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyY2VsXF9WaWV3UGFyY2VsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/Shared/_AdminManagerMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbk1hbmFnZXJNZW51LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/Shared/_DeliveryManMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9EZWxpdmVyeU1hbk1lbnUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/Shared/_FrontOfficeMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gcm9udE9mZmljZU1lbnUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/Shared/_StationManagerMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TdGF0aW9uTWFuYWdlck1lbnUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/ViewDelivery/UpdateLocalStatus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld0RlbGl2ZXJ5XFVwZGF0ZUxvY2FsU3RhdHVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/ViewDelivery/UpdateOverseaStatus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld0RlbGl2ZXJ5XFVwZGF0ZU92ZXJzZWFTdGF0dXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/ViewDelivery/VDelivery.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld0RlbGl2ZXJ5XFZEZWxpdmVyeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/ViewDelivery/VOverseaDelivery.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld0RlbGl2ZXJ5XFZPdmVyc2VhRGVsaXZlcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/ViewDelivery/_ViewOverseaParcelDelivery.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld0RlbGl2ZXJ5XF9WaWV3T3ZlcnNlYVBhcmNlbERlbGl2ZXJ5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/ViewDelivery/_ViewParcelDelivery.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld0RlbGl2ZXJ5XF9WaWV3UGFyY2VsRGVsaXZlcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vivian/Desktop/web/29July/P02_WebApr2023_Assg1_Team6/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-gvryoxdyq9

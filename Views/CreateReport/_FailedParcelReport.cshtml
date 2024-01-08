@@ -1,0 +1,40 @@
+﻿@model IEnumerable<P02_WebApr2023_Assg1_Team6.Models.Parcel>
+
+@if (Model.ToList().Count > 0)
+{
+<div class="table-responsive">
+	<table id="viewStaff" class="table table-striped table-bordered">
+		<thead class="table-dark">
+			<tr>
+				<th>Parcel ID</th>
+				<th>Item Description</th>
+				<th>Delivery Address</th>
+				<th>Delivery Status</th>
+				<th>Delivery Man ID</th>
+				<th></th>
+			</tr>
+		</thead>
+	<tbody>
+				@foreach (var item in Model)
+				{
+					<tr>
+						<td>@item.ParcelId.ToString()</td>
+						<td>@item.ItemDescription</td>
+						<td>@item.DeliveryAddress</td>
+						<td>@item.DeliveryStatus</td>
+						<td>@item.DeliveryManID</td>
+						
+						<td>
+							<a asp-action="CreateFailureReport" asp-controller="CreateReport"
+					   asp-route-id="@item.ParcelId">Create Delivery Failure Report</a> 
+						</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+	</div>
+}
+else
+{
+	<span style="color:red">No record found!</span>
+}

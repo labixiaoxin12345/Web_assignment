@@ -1,0 +1,10 @@
+﻿@model IEnumerable<P02_WebApr2023_Assg1_Team6.Models.DeliveryHistory>
+
+@{
+    ViewData["Title"] = "ViewDeliveryHistory";
+}
+
+<h4 class="PageTitle">View Delivery History</h4>
+<!-- Add a partial view to display a list of delivery history records
+ in a tabular format. -->
+<partial name="~/Views/DeliveryHistory/_ViewDeliveryHistory.cshtml" model="@Model" />

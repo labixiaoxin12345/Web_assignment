@@ -1,0 +1,62 @@
+﻿@model P02_WebApr2023_Assg1_Team6.Models.ParcelViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h4 class="PageTitle">View Parcel Details</h4>
+<hr />
+<fieldset class="FormContent">
+    <div class="row mb-3">
+        <label asp-for="StaffName"
+               class="col-sm-3 col-form-label pt-0 pt-0"></label>
+        <div class="col-sm-9">
+            @Html.Display("StaffName")
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label asp-for="ParcelId"
+               class="col-sm-3 col-form-label pt-0"></label>
+        <div class="col-sm-9">
+            @Html.Display("ParcelId")
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label asp-for="ItemDescription"
+               class="col-sm-3 col-form-label pt-0"></label>
+        <div class="col-sm-9">
+            @Html.Display("ItemDescription")
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label asp-for="DeliveryAddress"
+               class="col-sm-3 col-form-label pt-0"></label>
+        <div class="col-sm-9">
+            @Html.Display("DeliveryAddress")
+        </div>
+    </div>
+   
+    <div class="row mb-3">
+        <label asp-for="TargetDeliveryDate" class="col-sm-3 col-form-label pt-0"></label>
+        <div class="col-sm-9">
+            @Html.Display("TargetDeliveryDate")
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label asp-for="DeliveryStatus"
+               class="col-sm-3 col-form-label pt-0"></label>
+        <div class="col-sm-9">
+            @Html.Display("DeliveryStatus")
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-sm-9 offset-sm-3">
+            <a asp-action="Update" asp-controller="Parcel"
+               asp-route-id="@Model.ParcelId">Update</a> |
+            <a asp-action="UpdateStatus"
+               asp-controller="Parcel">Back to List</a>
+        </div>
+    </div>
+</fieldset>

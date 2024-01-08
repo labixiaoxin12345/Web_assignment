@@ -1,0 +1,75 @@
+﻿@model P02_WebApr2023_Assg1_Team6.Models.Parcel
+
+@{
+    ViewData["Title"] = "AssignParcel";
+}
+
+<h4 class="PageTitle">Assign Delivery Man</h4>
+<hr />
+        <form asp-action="AssignParcel">
+                <fieldset class="FormContent">
+                    <div class="row mb-3">
+            <label asp-for="ParcelId"
+                               class="col-sm-3 col-form-label"></label>
+                        <div class="col-sm-9 col-md-5">
+                <input asp-for="ParcelId" readonly
+                                   class="form-control-plaintext" />
+                        </div>
+                    <div class="row mb-3">
+                        <label asp-for="ReceiverName"
+                                class="col-sm-3 col-form-label"></label>
+                        <div class="col-sm-9 col-md-5">
+                            <input asp-for="ReceiverName" readonly
+                                    class="form-control-plaintext" />
+                            @*  <input type="hidden" asp-for="ReceiverName" />
+                            <input type="hidden" asp-for="ReceiverTelNo" />*@
+                        </div>
+                    
+                    <div class="row mb-3">
+                        <label asp-for="TargetDeliveryDate"
+                                class="col-sm-3 col-form-label"></label>
+                        <div class="col-sm-9 col-md-5">
+                            <input asp-for="TargetDeliveryDate" readonly
+                                    class="form-control-plaintext" />
+                        
+                        </div>
+
+                
+                
+
+                    <div class="row mb-3">
+                        <input type="hidden" asp-for="DeliveryStatus" />
+                        <label asp-for="DeliveryManID"
+                               class="col-sm-3 col-form-label"></label>
+                        <div class="col-sm-9 col-md-5">
+                            <!-- Drop-down list displaying deliverymanid,
+                            with Delivery man iD as returned value -->
+                            <select asp-for="DeliveryManID"
+                                    asp-items="@(new SelectList(
+     @ViewData["DeliveryManList"] as List <Staff>,
+     "StaffId","StaffId"))"
+                                    class="form-select"></select>
+                            <span style="color:red;">@TempData["ErrorMessage"]</span>
+                        </div>
+                        
+                    </div>
+
+
+                    
+
+
+                    <div class="row mb-3">
+                        <div class="col-sm-9 offset-sm-3">
+                            <input type="submit" value="Assign"
+                                   class="btn btn-primary" />
+                        </div>
+                    </div>
+
+
+
+                    <div>
+                        <a asp-action="AssignDeliveryMan">Back to List</a>
+                    </div>
+ 
+    </fieldset>
+</form>

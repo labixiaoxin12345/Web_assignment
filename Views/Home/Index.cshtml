@@ -1,0 +1,87 @@
+﻿@{
+	Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Use Unicode character encoding - multi-language compatibility -->
+	<meta charset="utf-8">
+
+	<!-- Set the initial view zooming scale for mobile device -->
+	<meta name="viewport" content="width = device-width,
+ initial-scale = 1" />
+
+	<title>NP Courier Service </title>
+
+	<!-- Reference to customized styling for this website -->
+	<link rel="stylesheet" type="text/css" href="~/css/Site.css">
+</head>
+<body>
+
+
+
+	<div class="bg">
+
+		<div class="container" id="mainContainer">
+			<!-- 1st row -->
+			<div class="flex-container">
+
+				<!-- Flexbox for logo, auto-expand in the container -->
+				<div style="flex:auto;">
+					<img id="imgNPLogo" src="~/images/logo.png" width="300" height="100" />
+				</div>
+
+				<!-- Flexbox for staff login -->
+				<div>
+					<form method="post" action="~/Home/StaffLogin">
+						<fieldset class="loginFieldset">
+							<legend>Staff Login</legend>
+							<label for="txtLoginID">Login ID:</label>
+							<input type="text" name="txtLoginID"
+								   id="txtLoginID" required />
+							<br />
+							<label for="txtPassword">Password:</label>
+							<input type="password" name="txtPassword"
+								   id="txtPassword" style="width:100px"
+								   required />
+							<input type="submit" id="btnStaffLogin"
+								   class="myButton" value="Login" />
+							<br />
+							<span style="color:red;">@TempData["Message"]</span>
+						</fieldset>
+					</form>
+				</div>
+
+				<!-- Flexbox for student login -->
+				<div>
+					<form method="post" action="~/Home/MemberLogin">
+						<fieldset class="loginFieldset">
+							<legend>Member Login</legend>
+							<label for="txtLoginID">Login ID:</label>
+							<input type="email" name="txtLoginID"
+								   id="txtLoginID" required />
+							<br />
+							<label for="txtPassword">Password:</label>
+							<input type="password" name="txtPassword"
+								   id="txtPassword" style="width:100px"
+								   required />
+							<input type="submit" id="btnMemberLogin"
+								   class="myButton" value="Login" />
+							<br />
+							<span style="color:red;">@TempData["Message"]</span>
+						</fieldset>
+					</form>
+				</div>
+
+			</div>
+			<div style="text-align:center; color:#f1b44b;">
+				<h1 style="font-size: 80px"> Welcome to NP<br />Courier Service</h1>
+			</div>
+		</div>
+
+	</div>
+
+	</div>
+</body>
+</html>
+

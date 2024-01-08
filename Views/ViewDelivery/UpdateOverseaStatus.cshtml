@@ -1,0 +1,77 @@
+﻿@model P02_WebApr2023_Assg1_Team6.Models.Parcel
+
+@{
+    ViewData["Title"] = "UpdateOverseaStatus";
+}
+
+<h4 class="PageTitle">Update Oversea Parcel Status</h4>
+<hr />
+<form asp-action="UpdateOverseaStatus">
+<fieldset class="FormContent">
+
+
+            <div class="row mb-3">
+            <label asp-for="ParcelId"
+             class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+            <input asp-for="ParcelId" readonly
+             class="form-control-plaintext" />
+            </div>
+
+            <div class="row mb-3">
+                <label asp-for="DeliveryManID"
+                       class="col-sm-3 col-form-label"></label>
+                <div class="col-sm-9 col-md-5">
+                    <input asp-for="DeliveryManID" readonly
+                           class="form-control-plaintext" />
+                </div>
+
+
+        </div>
+        <div class="row mb-3">
+            <label asp-for="ItemDescription"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="ItemDescription" readonly class="form-control-plaintext" / />
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label asp-for="DeliveryAddress"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="DeliveryAddress" readonly class="form-control-plaintext" / />
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label asp-for="TargetDeliveryDate"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="TargetDeliveryDate" readonly class="form-control-plaintext" / />
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label asp-for="DeliveryStatus"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <!-- Drop-down list displaying status,
+                with status as returned value -->
+                <select asp-for="DeliveryStatus"
+                            asp-items="@ViewData["status"] as List<SelectListItem>"
+                        class="form-select"></select>
+                    <span style="color:red;">@TempData["ErrorMessage"]</span>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-sm-9 offset-sm-3">
+                <input type="submit" value="Update"
+                       class="btn btn-primary" />
+            </div>
+        </div>
+        <div>
+            <a asp-action="VOverseaDelivery">Back to List</a>
+        </div>
+    </fieldset>
+</form>

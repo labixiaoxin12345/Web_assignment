@@ -1,0 +1,71 @@
+﻿@model P02_WebApr2023_Assg1_Team6.Models.StaffViewModel
+
+
+@{
+    ViewData["Title"] = "VDelivery";
+}
+<h4 class="PageTitle">View Local Delivery Assigned</h4>
+
+
+<!-- Display staff -->
+<div class="table-responsive">
+    <table id="viewStaff" class="table table-striped table-bordered">
+        <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Staff Name</th>
+            <th></th>
+        </tr>
+        </thead>
+    <tbody>
+
+
+@{
+    string name = Context.Session.GetString("Name");
+}
+
+
+ @foreach (var item in Model.staffList)
+ {
+
+     if(name==item.StaffName)
+     {
+        string selectedRow = "";
+        if (ViewData["selectedDeliveryManId"].ToString()
+        == item.StaffId.ToString())
+         {
+             // Highlight the selected row
+             selectedRow = "class='table-primary'";
+         }
+         <tr @Html.Raw(selectedRow)>
+         <td>@item.StaffId.ToString()</td>
+         <td>@item.StaffName</td>
+        <td>
+            <a asp-action="VDelivery" asp-controller="ViewDelivery"
+            asp-route-id="@item.StaffId">View Parcel</a>
+        </td>
+        </tr>
+     }
+ }
+        </tbody>
+    </table>
+</div>
+
+
+<!-- Display a list of parcel for deliveryman -->
+@if (ViewData["selectedDeliveryManId"]!= "")
+{
+    if (Model.parcelList.Count != 0)
+    {
+        <h5>
+            Parcel Assinged to Staff ID 
+            @ViewData["selectedDeliveryManId"].ToString() :
+        </h5>
+        <partial name="~/Views/ViewDelivery/_ViewParcelDelivery.cshtml"
+         model="@Model.parcelList" />
+    }
+    else
+    {
+        <h5>No parcel assigned for you!</h5>
+    }
+}

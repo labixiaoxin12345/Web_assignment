@@ -1,0 +1,102 @@
+﻿@model P02_WebApr2023_Assg1_Team6.Models.DeliveryFailure
+
+@{
+    ViewData["Title"] = "CreateFailureReport";
+}
+
+<h4 class="PageTitle">Create Delivery Failure Report</h4>
+<hr />
+<form asp-action="CreateFailureReport">
+ <fieldset class="FormContent">
+        <div class="row mb-3">
+            <label asp-for="ParcelID"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <!-- Drop-down list displaying failedParcelIdList,
+                with parcel iD as returned value -->
+                <select asp-for="ParcelID"
+                        asp-items="@(new SelectList(
+@ViewData["failedParcelIdList"] as List <Parcel>,
+"ParcelId","ParcelId"))"
+                        class="form-select"></select>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label asp-for="DeliveryManID"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <!-- Drop-down list displaying deliverymanid,
+                with saff iD as returned value -->
+                <select asp-for="DeliveryManID"
+                        asp-items="@(new SelectList(
+     @ViewData["DeliveryManList"] as List <Staff>,
+     "StaffId","StaffId"))"
+                        class="form-select"></select>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label asp-for="FailureType"
+                    class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <!-- Drop-down list displaying failure status,
+                with delivery status as returned value -->
+                <select asp-for="FailureType"
+                        asp-items="@ViewData["failureStatus"] as List<SelectListItem>"
+                        class="form-select"></select>
+            </div>
+                </div>
+
+        <div class="row mb-3">
+            <label asp-for="Description"
+                    class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                        <input type="text" asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description"
+                        class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label asp-for="StationMgrID"
+                    class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <!-- Drop-down list displaying stationManagerList,
+                with staff iD as returned value -->
+                <select asp-for="StationMgrID"
+                        asp-items="@(new SelectList(
+@ViewData["stationManagerList"] as List <Staff>,
+"StaffId","StaffId"))"
+                        class="form-select"></select>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label asp-for="FollowUpAction"
+                    class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                        <input type="text" asp-for="FollowUpAction" class="form-control" />
+                <span asp-validation-for="FollowUpAction"
+                        class="text-danger"></span>
+
+                <span style="color:red;">@TempData["ErrorMessage"]</span>
+            </div>
+        </div>
+ 
+        <div class="row mb-3">
+            <div class="col-sm-9 offset-sm-3">
+                <input type="submit" value="Create"
+                       class="btn btn-primary" />
+            </div>
+        </div>
+
+     
+        
+
+
+        <div>
+            <a asp-action="FailedParcelReport">Back to List</a>
+        </div>
+    </fieldset>
+</form>

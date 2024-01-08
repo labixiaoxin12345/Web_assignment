@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - NP Counrier Service</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/P02_WebApr2023_Assg1_Team6.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        @if (Context.Session.GetString("Role") == "Station Manager")
+        {
+            @await Html.PartialAsync("_StationManagerMenu.cshtml")
+        }
+
+        @if (Context.Session.GetString("Role") == "Delivery Man")
+        {
+            @await Html.PartialAsync("_DeliveryManMenu.cshtml")
+        }
+
+        @if (Context.Session.GetString("Role") == "Front Office Staff")
+        {
+            @await Html.PartialAsync("_FrontOfficeMenu")
+        }
+    </header>
+    <div class="container">
+        
+        <!-- 1nd row -->
+        <div class="row">
+            <div class="col-sm-12">
+               <p style="padding:2px 15px;">
+                 @{
+                 string userId = "Anonymous";
+                 string userRole = "Unknown";
+                 if (Context.Session.GetString("LoginID") != null)
+                 {
+                 userId = Context.Session.GetString("LoginID");
+                        }
+                        if (Context.Session.GetString("Role") != null)
+                        {
+                            userRole = Context.Session.GetString("Role");
+                        }
+                        DateTime currentDateTime = DateTime.Now;
+                    }
+                    Welcome;
+                    <span style="font-weight:bold">@userId</span>
+                    (Role: @userRole);
+                    <!--<span>@TempData["LoginTime"]</span>-->
+                    You have logged in since @currentDateTime
+                    </p>
+            </div>
+        </div>
+    <!-- 2nd row -->
+    <div class="row">
+        <div class="col-sm-12">
+            @RenderBody()
+        </div>
+    </div>
+    </div>
+    <footer class="border-top small text-end text-muted">
+        <p style="padding-right:15px; padding-top: 5px">
+            NP Courier Service - &copy;@DateTime.Today.Year
+            School of ICT, Ngee Ann Polytechnic
+        </p>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
